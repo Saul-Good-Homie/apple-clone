@@ -1,0 +1,193 @@
+/* Basic CSS Boiler Plate */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial,
+    Verdana, sans-serif;
+  margin: 0;
+  display: block;
+}
+
+a {
+  color: #08c;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* Start of hero section CSS  */
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+/* .billboard {
+  border: 2px solid salmon;
+  top: 0;
+  right: 0;
+  bottom: 292px;
+  left: 0;
+  overflow: hidden;
+  display: block;
+} */
+
+.hero {
+  min-height: 400px;
+  background-image: url(Images/your_verse_hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 90%;
+}
+
+.flex-nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.flex-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-apple {
+  color: silver;
+  padding: 0;
+}
+
+.flex-nav li {
+  border: 1px solid black;
+  border-radius: 4px 0 0 4px;
+  border-width: 0 2px 0 0;
+  cursor: pointer;
+  height: 36px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D")
+    0 2 0 1;
+  background-color: grey; /* For browsers that do not support gradients*/
+  background-image: linear-gradient(grey 50%, silver);
+}
+
+.flex-nav li:hover {
+  background: rgba(128, 128, 128, 01);
+}
+
+#search {
+  width: 100%;
+  height: 19px;
+  padding: 2px 18px 1px 22px;
+  background-image: linear-gradient(grey 50%, silver);
+  border-radius: 12px;
+}
+
+.cta {
+  color: white;
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 36px;
+  margin-bottom: 27px;
+}
+h2 {
+  font-size: 16px;
+  line-height: 18px;
+}
+h3 {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+h3:hover {
+  text-decoration: underline;
+}
+
+/* Start of 4 image gallery CSS */
+
+.gallery {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+.gallery ul {
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.gallery li {
+  padding: 1px;
+}
+
+.gallery img {
+  max-width: 100%;
+}
+
+/* Start of footer CSS */
+
+footer {
+  font-size: 0.8334em;
+  line-height: 1.2;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: auto;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav ul {
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-nav li {
+  padding: 1px;
+}
+
+.footer-nav li + li::before {
+  content: " | ";
+}
+
+.copyright {
+  margin-top: 5px;
+}
