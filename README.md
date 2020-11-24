@@ -1,4 +1,4 @@
-In this project, I am attempting to recreate an article from the New York Times. This project will primarily practice using CSS Grid and Flexbox.
+In this project, I am attempting to recreate an homepage from Apple. This project will primarily practice using image background and background gradients.
 
 CSS Project from [The Odin Project](https://www.theodinproject.com/courses/html-and-css/lessons/building-with-backgrounds-and-gradients)
 
